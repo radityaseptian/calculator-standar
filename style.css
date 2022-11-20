@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container {
+  height: 30em;
+  width: 25em;
+  padding: 10px;
+}
+body #container #calculator {
+  width: 100%;
+  height: 100%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid;
+  border-color: rgb(255, 0, 0) rgb(255, 208, 0) rgb(43, 255, 0) rgb(0, 38, 255);
+  gap: 20px;
+  padding: 20px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.648));
+}
+body #container #output {
+  background: #fff;
+  width: 97%;
+  height: 90px;
+  border-radius: 10px;
+  height: calc(20% - 10px);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+}
+body #container #output p {
+  font-size: 1.7em;
+}
+body #container #input {
+  background: #fff;
+  width: 100%;
+  height: calc(80% - 10px);
+}
+body #container #input td:hover {
+  background: rgb(226, 223, 223);
+}
+body #container #input table {
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+body #container #input table tr,
+body #container #input table td {
+  border: 1px solid black;
+  background: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  cursor: pointer;
+}
+body #container #input table tr #bagi,
+body #container #input table tr #kali,
+body #container #input table tr #kurang,
+body #container #input table tr #tambah,
+body #container #input table tr #jumlah,
+body #container #input table td #bagi,
+body #container #input table td #kali,
+body #container #input table td #kurang,
+body #container #input table td #tambah,
+body #container #input table td #jumlah {
+  background: orange;
+}
+body #container #input table tr #hapus,
+body #container #input table td #hapus {
+  font-size: 1.1em;
+  width: 3.54em;
+}
+body #container #input table tr #clear,
+body #container #input table tr #kurang,
+body #container #input table td #clear,
+body #container #input table td #kurang {
+  font-size: 1.2em;
+}
+body #container #input table tr #minus,
+body #container #input table td #minus {
+  width: 3.5em;
+}
+
+/*# sourceMappingURL=style.css.map */
