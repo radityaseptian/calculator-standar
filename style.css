@@ -27,7 +27,7 @@ body #container #calculator {
   align-items: center;
   flex-direction: column;
   border: 10px solid;
-  border-color: rgb(255, 0, 0) rgb(255, 208, 0) rgb(43, 255, 0) rgb(0, 38, 255);
+  border-color: rgb(255, 0, 0) rgb(17, 0, 255) rgb(43, 255, 0) rgb(255, 251, 0);
   gap: 20px;
   padding: 20px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.648));
@@ -39,13 +39,14 @@ body #container #output {
   border-radius: 10px;
   height: calc(20% - 10px);
   display: flex;
-  justify-content: end;
   align-items: center;
-  padding: 10px;
-  z-index: 1;
+  justify-content: right;
+  padding: 6px;
+  overflow: hidden;
+  text-align: right;
 }
 body #container #output p {
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 body #container #input {
   background: #fff;
